@@ -1,0 +1,16 @@
+[
+  {
+    "id": "7624c646-c78b-4530-8c0a-e6cae0277da3",
+    "name": "trg",
+    "price": 56.0,
+    "quantity": 3,
+    "author": "rr"
+  },
+  {
+    "id": "f23d0c99-6351-474a-a030-22e2d67c1179",
+    "name": "c",
+    "price": 500.0,
+    "quantity": 5,
+    "author": "ram"
+  }
+]
