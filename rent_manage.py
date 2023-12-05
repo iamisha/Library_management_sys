@@ -1,4 +1,4 @@
-from add_new_user import LibraryManagementSystem
+from user_manage import LibraryManagementSystem
 from Book_manage import Book
 from datetime import datetime
 import json
@@ -100,9 +100,10 @@ class Book_rent:
             if data['user_id'] ==user_id and data['book_id']==book_id:
                 dat2=data['Date']
                 date2 = datetime.strptime(dat2, '%Y-%m-%d')
-                date_difference = (date2 - date1).days
+                date_difference = (date1 - date2).days
+                print(date_difference)
                 if date_difference>15:
-                    print("please pay the fine you cross limit time:")
+                    print("please pay (Rs 15) the fine you cross limit time:")
                     choice=input("enter the [Y] key to denote the paid fine:")
                     if choice.lower() == 'y':
                         self.rent_data.remove(data)
